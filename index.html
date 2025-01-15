@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+          <link rel="stylesheet" href="style.css">
+          <link rel="icon" href="favicon.ico" type="image/x-icon">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        
+
+</head>
+<body>
+<div class="container col-sm-4 col-md-6 col-lg-5 mt-4  p-3 border border-dark" id="div1">
+    <div class="form-inline width-500px" id="div2">
+
+         <button class=" col-sm-3 " id="previous" onclick="previous()"><i class="fas fa-chevron-left pl-2"></i>Previous</button>
+         <i class="fas fa-calendar"></i> 
+        <h3 class="card-header " id="monthAndYear"></h3>
+        <button class="col-sm-3" id="next" onclick="next()">Next<i class="fas fa-chevron-right pl-1"></i></button>
+    </div>
+    <div class="card">
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+            <thead>
+            <tr>
+                <th class="text-black bg bg-danger">Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            </thead>
+
+            <tbody id="calendar-body">
+
+            </tbody>
+        </table>
+
+        <br/>
+        <form class="form-inline">
+            <label class="lead mr-4 ml-4 mt-3 mb-3" for="month">Month: </label>
+            <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                <option value=0>January</option>
+                <option value=1>February</option>
+                <option value=2>March</option>
+                <option value=3>April</option>
+                <option value=4>May</option>
+                <option value=5>June</option>
+                <option value=6>July</option>
+                <option value=7>August</option>
+                <option value=8>September</option>
+                <option value=9>October</option>
+                <option value=10>November</option>
+                <option value=11>December</option>
+            </select>
+
+
+            <label for="year"></label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+            <option value=2025>2025</option>
+        </select></form>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

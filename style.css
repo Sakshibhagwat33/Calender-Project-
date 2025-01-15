@@ -1,0 +1,42 @@
+.selected {
+    background-color: #4CAF50; /* Green background for selected date */
+    color: white; /* White text color */
+}
+i{
+    padding-left: 40px;
+    
+}
+#monthAndYear{
+    padding-left:30px;
+
+}
+#div1{
+    border-radius: 20px;
+    border: rgb(80, 78, 78);
+     
+}
+#div1:hover{
+    box-shadow: 5px 5px 15px 15px rgb(146, 145, 145);
+}
+#div2{
+   width: 500px;
+}
+#next{
+    margin-left: 20px; 
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+#previous{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#next:hover{
+    background-color:black;
+    color:white;
+}
+#previous:hover{
+    background-color:black;
+    color:white;
+}
